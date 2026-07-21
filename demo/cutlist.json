@@ -1,0 +1,221 @@
+{
+ "bpm": 128.02,
+ "shots": [
+  {
+   "clip": "macro-millimeter-film_clip2.mp4",
+   "in": 0.606,
+   "start": 0.0,
+   "end": 0.929
+  },
+  {
+   "clip": "tennis-racket-striking_clip3.mp4",
+   "in": 0.6,
+   "start": 0.929,
+   "end": 1.869
+  },
+  {
+   "clip": "elite-tennis-player_clip1.mp4",
+   "in": 0.6,
+   "start": 1.869,
+   "end": 2.345
+  },
+  {
+   "clip": "racetrack-wide-overview_clip1.mp4",
+   "in": 0.606,
+   "start": 2.345,
+   "end": 2.81
+  },
+  {
+   "clip": "macro-single-solar_clip2.mp4",
+   "in": 0.6,
+   "start": 2.81,
+   "end": 3.75
+  },
+  {
+   "clip": "high-speed-dozens_clip3.mp4",
+   "in": 0.606,
+   "start": 3.75,
+   "end": 4.679
+  },
+  {
+   "clip": "macro-tennis-player_clip2.mp4",
+   "in": 0.6,
+   "start": 4.679,
+   "end": 5.155
+  },
+  {
+   "clip": "cavernous-imax-theater_clip1.mp4",
+   "in": 0.606,
+   "start": 5.155,
+   "end": 5.619
+  },
+  {
+   "clip": "aerial-from-perspective_clip3.mp4",
+   "in": 0.6,
+   "start": 5.619,
+   "end": 6.56
+  },
+  {
+   "clip": "macro-fiber-optic_clip2.mp4",
+   "in": 0.606,
+   "start": 6.56,
+   "end": 7.5
+  },
+  {
+   "clip": "driver-face-g-force_clip2.mp4",
+   "in": 0.606,
+   "start": 7.5,
+   "end": 7.964
+  },
+  {
+   "clip": "macro-coin-blank_clip2.mp4",
+   "in": 0.606,
+   "start": 7.964,
+   "end": 8.429
+  },
+  {
+   "clip": "macro-millimeter-film_clip2.mp4",
+   "in": 1.535,
+   "start": 8.429,
+   "end": 9.369
+  },
+  {
+   "clip": "tennis-racket-striking_clip3.mp4",
+   "in": 1.54,
+   "start": 9.369,
+   "end": 10.31
+  },
+  {
+   "clip": "elite-tennis-player_clip1.mp4",
+   "in": 1.076,
+   "start": 10.31,
+   "end": 10.774
+  },
+  {
+   "clip": "racetrack-wide-overview_clip1.mp4",
+   "in": 1.071,
+   "start": 10.774,
+   "end": 11.25
+  },
+  {
+   "clip": "macro-single-solar_clip2.mp4",
+   "in": 1.54,
+   "start": 11.25,
+   "end": 12.179
+  },
+  {
+   "clip": "high-speed-dozens_clip3.mp4",
+   "in": 1.535,
+   "start": 12.179,
+   "end": 13.119
+  },
+  {
+   "clip": "macro-tennis-player_clip2.mp4",
+   "in": 1.076,
+   "start": 13.119,
+   "end": 13.595
+  },
+  {
+   "clip": "cavernous-imax-theater_clip1.mp4",
+   "in": 1.071,
+   "start": 13.595,
+   "end": 14.06
+  },
+  {
+   "clip": "aerial-from-perspective_clip3.mp4",
+   "in": 1.54,
+   "start": 14.06,
+   "end": 15.0
+  },
+  {
+   "clip": "macro-fiber-optic_clip2.mp4",
+   "in": 1.547,
+   "start": 15.0,
+   "end": 15.929
+  },
+  {
+   "clip": "driver-face-g-force_clip2.mp4",
+   "in": 1.071,
+   "start": 15.929,
+   "end": 16.405
+  },
+  {
+   "clip": "macro-coin-blank_clip2.mp4",
+   "in": 1.071,
+   "start": 16.405,
+   "end": 16.869
+  },
+  {
+   "clip": "macro-millimeter-film_clip2.mp4",
+   "in": 2.475,
+   "start": 16.869,
+   "end": 17.81
+  },
+  {
+   "clip": "tennis-racket-striking_clip3.mp4",
+   "in": 2.481,
+   "start": 17.81,
+   "end": 18.75
+  },
+  {
+   "clip": "elite-tennis-player_clip1.mp4",
+   "in": 1.54,
+   "start": 18.75,
+   "end": 19.215
+  },
+  {
+   "clip": "racetrack-wide-overview_clip1.mp4",
+   "in": 1.547,
+   "start": 19.215,
+   "end": 19.679
+  },
+  {
+   "clip": "macro-single-solar_clip2.mp4",
+   "in": 2.469,
+   "start": 19.679,
+   "end": 20.619
+  },
+  {
+   "clip": "high-speed-dozens_clip3.mp4",
+   "in": 2.475,
+   "start": 20.619,
+   "end": 21.56
+  },
+  {
+   "clip": "macro-tennis-player_clip2.mp4",
+   "in": 1.552,
+   "start": 21.56,
+   "end": 22.024
+  },
+  {
+   "clip": "cavernous-imax-theater_clip1.mp4",
+   "in": 1.535,
+   "start": 22.024,
+   "end": 22.5
+  },
+  {
+   "clip": "aerial-from-perspective_clip3.mp4",
+   "in": 2.481,
+   "start": 22.5,
+   "end": 23.429
+  },
+  {
+   "clip": "macro-fiber-optic_clip2.mp4",
+   "in": 2.475,
+   "start": 23.429,
+   "end": 24.369
+  },
+  {
+   "clip": "driver-face-g-force_clip2.mp4",
+   "in": 1.547,
+   "start": 24.369,
+   "end": 24.834
+  },
+  {
+   "clip": "macro-coin-blank_clip2.mp4",
+   "in": 1.535,
+   "start": 24.834,
+   "end": 25.0
+  }
+ ]
+}
