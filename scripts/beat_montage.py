@@ -208,12 +208,14 @@ def collect_clips(folder):
     return clips
 
 
-def build_cutlist(clips, beats, duration, pattern, order, seed):
+def build_cutlist(clips, beats, duration, pattern, order, seed, order_dir="asc"):
     """Shots: [(clip, in_point, start_t, end_t)] following the beat grid."""
     rng = random.Random(seed)
     pool = clips[:]
     if order == "shuffle":
         rng.shuffle(pool)
+    elif order == "duration":
+        pool.sort(key=lambda c: c["dur"], reverse=(order_dir == "desc"))
     cursors = {c["path"]: min(0.15 * c["dur"], 1.0) for c in clips}
 
     shots, bi, pi, ci = [], 0, 0, 0
@@ -295,7 +297,14 @@ def main():
     ap.add_argument("--res", default="auto",
                     help="WxH, or 'auto' (1080x1920 if clips are vertical)")
     ap.add_argument("--fps", type=int, default=30)
-    ap.add_argument("--order", choices=["shuffle", "name"], default="shuffle")
+    ap.add_argument("--order", choices=["shuffle", "name", "duration"],
+                    default="shuffle",
+                    help="clip ordering: shuffle, name (as scanned), or "
+                         "duration (sorted by clip length, see --order-dir)")
+    ap.add_argument("--order-dir", choices=["asc", "desc"], default="asc",
+                    help="direction for --order duration: asc = shortest "
+                         "clips first, desc = longest first (ignored "
+                         "otherwise)")
     ap.add_argument("--seed", type=int, default=7)
     ap.add_argument("--snap", type=float, default=0.03,
                     help="snap beats to onset peaks within this many seconds")
@@ -355,7 +364,7 @@ def main():
     print(f"  {len(clips)} clips -> {res[0]}x{res[1]} @ {args.fps} fps")
 
     shots = build_cutlist(clips, beats, duration, pattern,
-                          args.order, args.seed)
+                          args.order, args.seed, args.order_dir)
     if len(shots) < 2:
         die("could not build at least 2 shots (song/duration too short?)")
 

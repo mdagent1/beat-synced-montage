@@ -48,7 +48,8 @@ python3 scripts/synth_track.py --bpm 128 --secs 30 --out track.wav
 | `--bpm` | auto | Force the tempo if detection misses (odd/soft percussion). |
 | `--res` | `auto` | `WxH`. Auto picks 1080x1920 if most clips are vertical, else 1920x1080. |
 | `--fps` | `30` | Output frame rate. |
-| `--order` | `shuffle` | `shuffle` (seeded, repeatable) or `name` (filename order). |
+| `--order` | `shuffle` | `shuffle` (seeded, repeatable), `name` (filename order), or `duration` (sorted by clip length). |
+| `--order-dir` | `asc` | Direction for `--order duration`: `asc` = shortest clips first, `desc` = longest first. Ignored for other `--order` modes. |
 | `--seed` | `7` | Change to get a different shuffle. |
 | `--snap` | `0.03` | Snap each grid beat to the nearest onset peak within this many seconds. |
 | `--analyze` | off | Print BPM + first beats and exit. |
@@ -75,6 +76,9 @@ python3 scripts/synth_track.py --bpm 128 --secs 30 --out track.wav
   beat are skipped automatically.
 - Assumes a constant tempo (true of most modern recordings). Live/rubato
   recordings won't hold the grid; the `--snap` tolerance absorbs small drift.
+- `--order duration` is handy for a deliberate build: `--order-dir asc` ramps
+  from quick cutaways into longer shots, `desc` front-loads your best long
+  takes then tightens up toward the end.
 
 ## Troubleshooting
 - *Cuts feel off the beat* → run `--analyze`; if the BPM printed is half or
