@@ -28,6 +28,8 @@ python3 scripts/synth_track.py --bpm 128 --secs 30 --out track.wav
   on the demo: every cut within one frame of the grid (mean error 8 ms).
 - **`--pattern` is the taste knob** — `2,2,1,1` cuts two longer shots then two
   quick hits, so it feels edited, not metronomic.
+- **`--order` controls clip sequence** — `shuffle` (default), `name`, or
+  `duration` (shortest/longest first, via `--order-dir`).
 
 ## Options
 See [`SKILL.md`](SKILL.md) for the full flag reference and troubleshooting.
